@@ -1,0 +1,90 @@
+/* 📌 GENERALE: Font, colori e sfondo */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+}
+
+.reveal {
+    font-size: 28px;
+}
+
+.reveal .slide {
+    padding: 20px;
+}
+
+/*titoli*/
+.reveal h1 {
+    font-size: 50px;
+    color: #1f77b4;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.reveal h2 {
+    font-size: 40px;
+    color: #ff5733;
+    text-align: center;
+}
+
+/*testo*/
+.reveal p {
+    font-size: 26px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/*liste*/
+.reveal ul {
+    font-size: 26px;
+    padding-left: 30px;
+}
+
+.reveal li {
+    margin-bottom: 10px;
+}
+
+/*grafici*/
+.reveal img, .reveal canvas {
+    max-width: 80%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*grafici più in alto*/
+.reveal section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: center;
+    height: 100%;
+    padding-top: 20px;
+}
+
+
+.reveal .slide-number {
+    font-size: 16px;
+    color: #555;
+}
+
+
+.reveal pre {
+    background: #1e1e1e;
+    color: #ffffff;
+    font-size: 24px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.reveal .fragment {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+.reveal .fragment.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
